@@ -2,7 +2,7 @@
 
 """This module defines the UI components that go into our main app page."""
 
-from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout, QLineEdit
+from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout, QLineEdit, QComboBox
 
 class AppView(QWidget):
     """
@@ -23,6 +23,14 @@ class AppView(QWidget):
         self.Character_name_input.setPlaceholderText("Enter your character name")
         layout.addWidget(QLabel("Character Name:"))
         layout.addWidget(self.Character_name_input)
+
+        self.race_dropdown = QComboBox()
+        self.race_dropdown.addItems(["Human" , "Dwarf" , "Elf"])
+        layout.addWidget(QLabel("Race:"))
+        layout.addWidget(self.race_dropdown)
+
+
+
 
 
         self.setLayout(layout)
