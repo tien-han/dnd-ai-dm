@@ -18,16 +18,24 @@ class AppView(QWidget):
         layout = QVBoxLayout()
         layout.addWidget(message)
 
-
+        #Character name input
         self.Character_name_input = QLineEdit()
         self.Character_name_input.setPlaceholderText("Enter your character name")
         layout.addWidget(QLabel("Character Name:"))
         layout.addWidget(self.Character_name_input)
 
+        #Character Race dropdown
         self.race_dropdown = QComboBox()
         self.race_dropdown.addItems(["Human" , "Dwarf" , "Elf"])
         layout.addWidget(QLabel("Race:"))
         layout.addWidget(self.race_dropdown)
+
+        #Character Class dropdown
+        self.class_dropdown = QComboBox()
+        self.class_dropdown.addItems(["Fighter", "Mage", "Rogue"])
+        layout.addWidget(QLabel("Class:"))
+        layout.addWidget(self.class_dropdown)
+
 
 
 
