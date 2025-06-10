@@ -3,7 +3,7 @@
 """This module defines the UI components that go into our main app page."""
 
 from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout, QLineEdit, QComboBox, QTextEdit, QPushButton
-
+from app.logic.ai_api_client import get_ai_response
 
 class AppView(QWidget):
     """
@@ -20,10 +20,10 @@ class AppView(QWidget):
         layout.addWidget(message)
 
         #Character name input
-        self.Character_name_input = QLineEdit()
-        self.Character_name_input.setPlaceholderText("Enter your character name")
+        self.character_name_input = QLineEdit()
+        self.character_name_input.setPlaceholderText("Enter your character name")
         layout.addWidget(QLabel("Character Name:"))
-        layout.addWidget(self.Character_name_input)
+        layout.addWidget(self.character_name_input)
 
         #Character Race dropdown
         self.race_dropdown = QComboBox()
@@ -49,17 +49,27 @@ class AppView(QWidget):
         layout.addWidget(QLabel("DM:"))
         layout.addWidget(self.dm_message)
 
-        #Users message area
+        #Users message area    Could later change user to character name
         self.user_input = QLineEdit()
         self.user_input.setPlaceholderText("Enter your message here")
-        layout.addWidget(QLabel("User:"))
+        layout.addWidget(QLabel("You:"))
         layout.addWidget(self.user_input)
 
         #send button
         self.send_button = QPushButton("Send")
         layout.addWidget(self.send_button)
-
-
-
+        self.send_button.clicked.connect(self.send_message)
 
         self.setLayout(layout)
+
+        #function to allow message back and forth to ai, allows no message to be sent as well and will still receive a reply.
+    def send_message(self):
+        user_text = self.user_input.text()
+        if user_text.strip():
+            self.dm_message.append(f"<b>You:</b> {user_text}")
+        response = get_ai_response(user_text)
+        self.dm_message.append(f"<b>DM:</b> {response}")
+        self.user_input.clear()
+
+
+
