@@ -49,7 +49,15 @@ class AppView(QWidget):
         layout.addWidget(QLabel("DM:"))
         layout.addWidget(self.dm_message)
 
+        #Users message area
+        self.user_input = QLineEdit()
+        self.user_input.setPlaceholderText("Enter your message here")
+        layout.addWidget(QLabel("User:"))
+        layout.addWidget(self.user_input)
 
+        #send button
+        self.send_button = QPushButton("Send")
+        layout.addWidget(self.send_button)
 
 
 
