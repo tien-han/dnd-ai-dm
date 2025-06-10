@@ -36,6 +36,13 @@ class AppView(QWidget):
         layout.addWidget(QLabel("Class:"))
         layout.addWidget(self.class_dropdown)
 
+        #Character Gender Dropdown
+        self.gender_dropdown = QComboBox()
+        self.gender_dropdown.addItems(["Male", "Female", "They/Them"])
+        layout.addWidget(QLabel("Gender:"))
+        layout.addWidget(self.gender_dropdown)
+
+
 
 
 
