@@ -2,7 +2,8 @@
 
 """This module defines the UI components that go into our main app page."""
 
-from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout, QLineEdit, QComboBox
+from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout, QLineEdit, QComboBox, QTextEdit, QPushButton
+
 
 class AppView(QWidget):
     """
@@ -42,6 +43,11 @@ class AppView(QWidget):
         layout.addWidget(QLabel("Gender:"))
         layout.addWidget(self.gender_dropdown)
 
+        #Dm message chat box
+        self.dm_message = QTextEdit()
+        self.dm_message.setReadOnly(True)
+        layout.addWidget(QLabel("DM:"))
+        layout.addWidget(self.dm_message)
 
 
 
