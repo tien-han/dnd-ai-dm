@@ -57,17 +57,20 @@ class AppView(QWidget):
         self.character_form_widget.setLayout(character_form_layout)
         self.layout.addWidget(self.character_form_widget)
 
-
         #Dm message chat box
         self.dm_message = QTextEdit()
         self.dm_message.setReadOnly(True)
         self.layout.addWidget(QLabel("Game:"))
         self.layout.addWidget(self.dm_message)
 
-        #Users message area    Could later change user to character name
+        #Users message area
+        self.user_input_label = QLabel("You:")
+        self.user_input_label.hide()
+        self.layout.addWidget(self.user_input_label)
+
         self.user_input = QLineEdit()
         self.user_input.setPlaceholderText("Enter your message here")
-        self.layout.addWidget(QLabel("You:"))
+        self.user_input.hide()
         self.layout.addWidget(self.user_input)
 
         #send button
@@ -76,6 +79,8 @@ class AppView(QWidget):
         self.send_button.clicked.connect(self.send_message)
 
         self.setLayout(self.layout)
+        self.adventure_started = False
+        self.world_intro_sent = False
 
     def send_message(self):
         """
@@ -102,42 +107,43 @@ class AppView(QWidget):
             "timestamp": datetime.now().isoformat()
         }
         system_prompt = "You are a creative Dungeon Master for a fantasy RPG."
-        if self.character_form_widget.isVisible():
+        if not self.world_intro_sent:
             self.character_form_widget.hide()
+            self.user_input_label.show()
+            self.user_input.show()
+            world_name = self.world_data.get("name", "Unknown World")
+            world_description = self.world_data.get("description", "No description.")
 
-       ##pulling world and setting history here after user info is entered
-        self.lore_text = QTextEdit()
-        self.lore_text.setReadOnly(True)
+            first_kingdom = next(iter(self.world_data.get("kingdoms", {}).values()), {})
+            kingdom_name = first_kingdom.get("name", "Unknown Kingdom")
+            kingdom_description = first_kingdom.get("description", "No description.")
 
-        world_name = self.world_data.get("name", "Unknown World")
-        world_description = self.world_data.get("description", "No description.")
+            first_town = next(iter(first_kingdom.get("towns", {}).values()), {})
+            town_name = first_town.get("name", "Unknown Town")
+            town_description = first_town.get("description", "No description.")
 
-        first_kingdom = next(iter(self.world_data.get("kingdoms", {}).values()), {})
-        kingdom_name = first_kingdom.get("name", "Unknown Kingdom")
-        kingdom_description = first_kingdom.get("description", "No description.")
+            self.lore_text = QTextEdit()
+            self.lore_text.setReadOnly(True)
+            self.lore_text.setPlainText(
+                f"🌍 World: {world_name}\n"
+                f"{world_description}\n\n"
+                f"🏰 Kingdom: {kingdom_name}\n"
+                f"{kingdom_description}\n\n"
+                f"🏘️ Town: {town_name}\n"
+                f"{town_description}\n\n"
+            )
+            self.layout.insertWidget(1, self.lore_text)
+            world_intro = (
+                f"Welcome to the world of {world_name}.\n"
+                f"You find yourself in the kingdom of {kingdom_name}.\n, "
+                f"near the town of {town_name}.\n"
+                f"What would you like to do?"
+            )
+            self.dm_message.append(f"<b>DM:</b> {world_intro}")
+            self.world_intro_sent = True
+        if not user_text.strip():
+            return
 
-        first_town = next(iter(first_kingdom.get("towns", {}).values()), {})
-        town_name = first_town.get("name", "Unknown Town")
-        town_description = first_town.get("description", "No description.")
-
-        self.lore_text = QTextEdit()
-        self.lore_text.setReadOnly(True)
-        self.lore_text.setPlainText(
-            f"🌍 World: {world_name}\n"
-            f"{world_description}\n\n"
-            f"🏰 Kingdom: {kingdom_name}\n"
-            f"{kingdom_description}\n\n"
-            f"🏘️ Town: {town_name}\n"
-            f"{town_description}\n\n"
-        )
-        self.layout.insertWidget(1, self.lore_text)
-        world_intro = (
-            f"Welcome to the world of {world_name}.\n"
-            f"You find yourself in the kingdom of {kingdom_name}.\n, "
-            f"near the town of {town_name}.\n"
-            f"What would you like to do?"
-        )
-        self.dm_message.append(f"<b>DM:</b> {world_intro}")
         response = self.ai_handler.get_ai_response(system_prompt, full_user_message)
         self.dm_message.append(f"<b>DM:</b> {response}")
         dm_entry = {
@@ -146,3 +152,4 @@ class AppView(QWidget):
             "timestamp": datetime.now().isoformat()
         }
         self.user_input.clear()
+
