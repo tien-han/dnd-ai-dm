@@ -19,11 +19,11 @@ class AppView(QWidget):
         self.ai_handler = AIHandler()
         self.world_data = LoadGame().get_world_data()
 
-        message = QLabel(f"Hello, {name}! Now choose your character info!" if name else "Hello!")
-        message.setStyleSheet("font-size: 20px; color: green")
+        self.welcome_message = QLabel(f"Hello, {name}! Now choose your character info!" if name else "Hello!")
+        self.welcome_message.setStyleSheet("font-size: 20px; color: green")
 
         self.layout = QVBoxLayout()
-        self.layout.addWidget(message)
+        self.layout.addWidget(self.welcome_message)
 
         #character form grouping
         self.character_form_widget = QWidget()
@@ -109,6 +109,7 @@ class AppView(QWidget):
         system_prompt = "You are a creative Dungeon Master for a fantasy RPG."
         if not self.world_intro_sent:
             self.character_form_widget.hide()
+            self.welcome_message.hide()
             self.user_input_label.show()
             self.user_input.show()
             world_name = self.world_data.get("name", "Unknown World")
