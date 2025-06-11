@@ -46,7 +46,8 @@ The following steps are done through the terminal.
    pip install --no-cache-dir -r requirements.txt
    ```
 
-3. Copy the `.env.example` file and rename it to `.env`. Add in your API key in this file as OPENROUTER_API_KEY=sk-rest-of-api-key-here 
+3. Copy the `.env.example` file and rename it to `.env`. Add in your API key in this file as OPENROUTER_API_KEY=sk-rest-of-api-key-here
+
 ### Start the project locally
 
 While in the project root directory `dnd-ai-dm`, start the application with:
