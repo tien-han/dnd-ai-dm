@@ -9,6 +9,7 @@ This repository holds a desktop app that has a user interface that allows any on
 This project uses the following technologies:
 
 - (PyQT)[https://pypi.org/project/PyQt6/] - Python Bindings to enable building a full stack application with only Python.
+- [OpenRouterAI](https://openrouter.ai/) - Handles AI API calls.
 
 ## Running the Project
 
