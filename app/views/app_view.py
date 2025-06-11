@@ -2,8 +2,10 @@
 
 """This module defines the UI components that go into our main app page."""
 
-from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout, QLineEdit, QComboBox, QTextEdit, QPushButton
-from app.logic.ai_api_client import get_ai_response
+from PyQt6.QtWidgets import (
+    QWidget, QLabel, QVBoxLayout, QLineEdit, QComboBox, QTextEdit, QPushButton
+)
+from app.logic import AIHandler, LoadGame
 
 class AppView(QWidget):
     """
@@ -12,6 +14,8 @@ class AppView(QWidget):
 
     def __init__(self, name: str):
         super().__init__()
+        self.ai_handler = AIHandler()
+        self.world_data = LoadGame().get_world_data()
 
         message = QLabel(f"Hello, {name}! Now choose your character info!" if name else "Hello!")
         message.setStyleSheet("font-size: 20px; color: green")
@@ -62,14 +66,15 @@ class AppView(QWidget):
 
         self.setLayout(layout)
 
-        #function to allow message back and forth to ai, allows no message to be sent as well and will still receive a reply.
     def send_message(self):
+        """
+            Function to allow message back and forth to ai, allows no
+            message to be sent as well and will still receive a reply.
+        """
+        system_prompt = "You are a creative Dungeon Master for a fantasy RPG."
         user_text = self.user_input.text()
         if user_text.strip():
             self.dm_message.append(f"<b>You:</b> {user_text}")
-        response = get_ai_response(user_text)
+        response = self.ai_handler.get_ai_response(system_prompt, user_text)
         self.dm_message.append(f"<b>DM:</b> {response}")
         self.user_input.clear()
-
-
-

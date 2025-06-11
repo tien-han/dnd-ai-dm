@@ -9,6 +9,7 @@ This repository holds a desktop app that has a user interface that allows any on
 This project uses the following technologies:
 
 - (PyQT)[https://pypi.org/project/PyQt6/] - Python Bindings to enable building a full stack application with only Python.
+- [OpenRouterAI](https://openrouter.ai/) - Handles AI API calls.
 
 ## Running the Project
 
@@ -46,7 +47,8 @@ The following steps are done through the terminal.
    pip install --no-cache-dir -r requirements.txt
    ```
 
-3. Copy the `.env.example` file and rename it to `.env`. Add in your API key in this file as OPENROUTER_API_KEY=sk-rest-of-api-key-here 
+3. Copy the `.env.example` file and rename it to `.env`. Add in your API key in this file as OPENROUTER_API_KEY=sk-rest-of-api-key-here
+
 ### Start the project locally
 
 While in the project root directory `dnd-ai-dm`, start the application with:

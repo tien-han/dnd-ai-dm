@@ -1,39 +1,53 @@
-import requests
+# app/logic/ai_api_client.py
+
+"""This module defines our AI model inputs and handles the API calls."""
+
+import logging
 import os
-from dotenv import load_dotenv
+import requests
 
-load_dotenv()
-api_key = os.getenv("OPENROUTER_API_KEY")
+LOG = logging.getLogger(__name__)
 
-model = "deepseek/deepseek-r1-0528-qwen3-8b:free"
-PROMPT = "You are a creative Dungeon Master for a fantasy RPG." #temp prompt for testing connection
+class AIHandler:
+    """
+        AIHandler provides methods to instantiate and handle OpenRouter
+        AI API calls.
+    """
 
-def get_ai_response(user_input: str):
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json",
-    }
-    data = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": PROMPT},
-            {"role": "user", "content": user_input}
-        ]
-    }
-    try:
-        response = requests.post(
-            "https://openrouter.ai/api/v1/chat/completions",
-            headers=headers,
-            json=data
-        )
-        response.raise_for_status()
-        return response.json()["choices"][0]["message"]["content"]
-    except Exception as error:
-        print(response.text)
+    def __init__(self):
+        LOG.info("Initializing AIHandler...")
 
+        # Get all inputs needed for API call
+        self.api_key = os.getenv("OPENROUTER_API_KEY")
+        self.model = "deepseek/deepseek-r1-0528-qwen3-8b:free"
+        self.url = "https://openrouter.ai/api/v1/chat/completions"
+        self.headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
 
-        return f"AI request failed: {error}"
+    def get_ai_response(self, system_prompt, user_prompt):
+        """Sends an API call to OpenRouter AI."""
+        LOG.info("Attempting to send request and receive OpenRouter AI API call response.")
+        data = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ]
+        }
 
-if __name__ == "__main__":    #temp function to test connection
-    user_input = "Describe a mysterious forest."
-    print("AI Response:", get_ai_response(user_input))
+        try:
+            response = requests.post(
+                url=self.url,
+                headers=self.headers,
+                json=data,
+                timeout=10
+            )
+            LOG.info("Response from OpenRouter AI call was: %s", response)
+            response.raise_for_status()
+
+            return response.json()["choices"][0]["message"]["content"]
+        except requests.exceptions.RequestException as error:
+            print(response.text)
+            return f"AI request failed: {error}"

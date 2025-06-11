@@ -1,0 +1,280 @@
+{
+  "name": "Carnivora",
+  "description": "Giant, long-lived beast-titans inhabit the skies and clouds of Carnivora, forming symbiotic relationships with the descendants of ancient warriors who built their floating city-structures directly onto their backs. These cities are vast, complex metropolises moving with the beasts' rhythms, centered around areas like dining halls and resting platforms. Each 'flock' of beasts and their passengers follows ancient migratory routes dictated by resource availability and pack cooperation.",
+  "kingdoms": {
+    "Temple Peaks": {
+      "name": "Temple Peaks",
+      "description": "The Temple Peaks region features massive, immobile mountains chosen for their spiritual resonance and connection to ancient traditions. Leaders are revered high-priests or arch-druids acting as guides, and cultures focus on harmony and ritual. Their history revolves around establishing sacred sites on dormant beast-titan territories.\n",
+      "world": "Carnivora",
+      "towns": {
+        "Serenity's Henge": {
+          "name": "Serenity's Henge",
+          "description": "Nestled beside a quiet peak known for its calming energy, Serenity's Henge is built in a sunken courtyard. The town center features an ancient, shaded grove and a simple temple sharing a sacred spring with the mountain beast-titan's resting area. Founded centuries ago, the town's history is tied to a powerful beast-titan whose migratory patterns naturally brought it to this tranquil spot, fostering a deep spiritual connection.\n",
+          "world": "Carnivora",
+          "npcs": {
+            "Mirel": {
+              "name": "Mirel",
+              "description": "A young woman with practical leather apron and worn leggings, works as an apprentice keeper. She meticulously prepares tallow for lamps before large observatories in a city cantilevered on a beast-titan's back. Mirel feels the constant pressure of earning the beast-titan's favor, fearing her own worth might be judged unfairly. Her quiet desire is to prove herself through diligent study and forge a reliable connection.\n",
+              "world": "Carnivora",
+              "kingdom": "Temple Peaks",
+              "town": "Serenity's Henge"
+            },
+            "Keevan": {
+              "name": "Keevan",
+              "description": "An old man with silvery hair and skin deeply wrinkled, lives as a simple hermit tending to ancestral markers in the quiet Temple Peaks mountains. He offers cryptic guidance connected to ancient spirits within the stone mountains, rarely speaking more than warnings about disturbing the balance. Keevan suffers from loneliness and the weight of forgotten lore, fearing humanity forgets the ways of old. His deep hope is merely for the sacred sites to remain respected according to ancient traditions.\n",
+              "world": "Carnivora",
+              "kingdom": "Temple Peaks",
+              "town": "Serenity's Henge"
+            },
+            "Sariel": {
+              "name": "Sariel",
+              "description": "A woman with quiet, focused eyes and simple robes, serves as a conflict mediator working between the diverse human populations living on the beasts' backs. She uses prolonged stillness and measured words to try and resolve disputes arising from resource sharing in the floating city. Sariel yearns for genuine acceptance in her community but feels trapped by the constant demands of her role and the inherent tensions between different circus factions.",
+              "world": "Carnivora",
+              "kingdom": "Temple Peaks",
+              "town": "Serenity's Henge"
+            }
+          }
+        },
+        "Dawnhold": {
+          "name": "Dawnhold",
+          "description": "Dawnhold sprawls awkwardly between two lower peaks, built generations ago on shifting bedrock beneath a protective beast-titan's wing. Key structures are the bustling market square and a resource-exchange hall. Its history involves bartering heavily with other towns using manufactured goods, relying on the beast-titan for safe transit across shifting peaks while avoiding the more remote summit temples.\n",
+          "world": "Carnivora",
+          "npcs": {
+            "Kaelen": {
+              "name": "Kaelen",
+              "description": "Kaelen appears to be a middle-aged human with weathered features, perhaps a stammer from past scares on a moving city. He's a cartographer mapping the shifting bedrock of Dawnhold. He desperately craves stability, knowing his town's passage dictates his resources.\n",
+              "world": "Carnivora",
+              "kingdom": "Temple Peaks",
+              "town": "Dawnhold"
+            },
+            "Elara": {
+              "name": "Elara",
+              "description": "Elara has the lean build and sharp eyes of a hermit, favoring practical robes over ornate temple garb. She lives reclusively in a remote mountain-side shrine of the Temple Peaks. Despite her deep spiritual knowledge, she feels alienated by the reverence bestowed upon her by the cult she once guided.\n",
+              "world": "Carnivora",
+              "kingdom": "Temple Peaks",
+              "town": "Dawnhold"
+            },
+            "Roric": {
+              "name": "Roric",
+              "description": "Roric, a younger member of the Mhorvaan Savanna Watchers, possesses a certain youthful enthusiasm marked by roguish grins that seem unearned by the grim-faced guardsmen. He serves as a lower-level beast-titan rider, guiding smaller migratory beasts. He yearns for more independent action but faces fractures when the beasts' communal needs clash with commands born of fear or resource scarcity.",
+              "world": "Carnivora",
+              "kingdom": "Temple Peaks",
+              "town": "Dawnhold"
+            }
+          }
+        },
+        "Apex Guard": {
+          "name": "Apex Guard",
+          "description": "Apex Guard stands high and proud, its roofs angled to track the setting sun and spot distant threats. Training halls, barracks, and disciplined market stalls dominate its landscape, perched precariously atop a frequently traversed peak. Its history is marked by a long conflict with rival beast-lords early in the floating cities' history, establishing itself as a vital defensive network protecting routes.",
+          "world": "Carnivora",
+          "npcs": {
+            "Sven Gronstone": {
+              "name": "Sven Gronstone",
+              "description": "Sven is a sturdy, scarred man in his late 40s with weathered features and eyes that constantly scan the horizon. An Apex Guard soldier, he spends his days patrolling the treacherous heights. He constantly fears he will fail another patrol, letting someone he's sworn to protect down.",
+              "world": "Carnivora",
+              "kingdom": "Temple Peaks",
+              "town": "Apex Guard"
+            },
+            "Kaelen Bright-Horn": {
+              "name": "Kaelen Bright-Horn",
+              "description": "Kaelen is an respected Elder in a Temple Peaks clan, with smooth, grey skin like carved wood and prominent, spiraling horns. He serves as a spiritual guide leading pilgrimages to ancient sites. He deeply fears that the old ways will be forgotten as younger generations forgets the deep resonance with their beasts.",
+              "world": "Carnivora",
+              "kingdom": "Temple Peaks",
+              "town": "Apex Guard"
+            },
+            "Anya Whitewood": {
+              "name": "Anya Whitewood",
+              "description": "Anya is a wiry woman, quick with market bartering. An Apex Guard-based pack-trader relies on the route's safety for her livelihood. She generally desires safe travel for her packs, but financially needs the resource-rich but turbulent southlands, creating internal conflict.",
+              "world": "Carnivora",
+              "kingdom": "Temple Peaks",
+              "town": "Apex Guard"
+            }
+          }
+        }
+      }
+    },
+    "Swamp Whisperers": {
+      "name": "Swamp Whisperers",
+      "description": "This small, isolated nation dwells within the eerie heart-swamps, living off unique flora and the cautious interactions with local, less dominant beasts. Their leaders are cunning marsh-lords who divine tides and whispers. Their secret history involves ancient-seeming, misplaced ruins barely connected to the main migratory paths.\n",
+      "world": "Carnivora",
+      "towns": {
+        "Riverwatch Post": {
+          "name": "Riverwatch Post",
+          "description": "This small settlement serves as the main gathering point on the slow-moving Green Silt River. It stretches along the water's edge with basic huts and reed-thatched homes, surrounded by strangely luminescent riverweed. Their history traces back to when the first marsh explorers established this outpost to monitor river tides and scout for potential trouble upstream.\n",
+          "world": "Carnivora",
+          "npcs": {
+            "Kaelen the Trader": {
+              "name": "Kaelen the Trader",
+              "description": "Kaelen has weathered skin and packs common river-dwelling supplies. He mostly deals goods from the Sky Cities to upstream settlements. His deeper pain is maintaining a steady supply; his desire is reliable passage and trade profits.\n",
+              "world": "Carnivora",
+              "kingdom": "Swamp Whisperers",
+              "town": "Riverwatch Post"
+            },
+            "Elara": {
+              "name": "Elara",
+              "description": "A young woman with restless eyes who navigates the marsh canoes. She scouts trade routes and monitors river changes for the settlement. Her pain is the pressure to prove herself to the ruling marsh-lords; her desire is to explore the dangerous heart of the swamp.\n",
+              "world": "Carnivora",
+              "kingdom": "Swamp Whisperers",
+              "town": "Riverwatch Post"
+            },
+            "Borin the Elder": {
+              "name": "Borin the Elder",
+              "description": "An ancient resident with a network of deep wrinkles and knowledgeable eyes, he collects riverweed and tells local tales. He feels the weight of the marsh secrets; his desire is to understand the whispers behind the history that connects his nation to forgotten places.",
+              "world": "Carnivora",
+              "kingdom": "Swamp Whisperers",
+              "town": "Riverwatch Post"
+            }
+          }
+        },
+        "Lagoon Somnolent": {
+          "name": "Lagoon Somnolent",
+          "description": "A hidden haven nestled beneath the turtle-draped shores of a shallow, moonlit lagoon, Lagoon Somnolent is barely connected to the rest of the swamp network. Its center is a naturally formed spring cave that provides unique balm to those suffering from 'sog sickness'. Whispered tales speak of spirits dwelling in the deep silt there. Their isolation likely protects them but also makes them wary outsiders.\n",
+          "world": "Carnivora",
+          "npcs": {
+            "Marshweaver": {
+              "name": "Marshweaver",
+              "description": "A middle-aged shaman with smudged tattoos and sightless eyes, cleansed by swamp mists. He studies ancient patterns in the marsh-ruins, seeking forgotten truths. His deepest pain is the fading whispers of his family's legacy, while he desires to unlock secrets that might save the swamp.\n",
+              "world": "Carnivora",
+              "kingdom": "Swamp Whisperers",
+              "town": "Lagoon Somnolent"
+            },
+            "Greenbark Fisher": {
+              "name": "Greenbark Fisher",
+              "description": "A wiry tracker with tangled green hair, climbing slimy rocks with practiced ease. He navigates the shallow channels using localized currents and shoals. His bitter longing is for a partner to settle the lagoon's 'fickle paths', even if it means leaving the silt-spirits behind.\n",
+              "world": "Carnivora",
+              "kingdom": "Swamp Whisperers",
+              "town": "Lagoon Somnolent"
+            },
+            "Elder Salt-Stone": {
+              "name": "Elder Salt-Stone",
+              "description": "An ancient figure, mostly blind, commanding the town from a mossy chair near the spring. He speaks with a deep, resonant voice and the weight of unshared time. His profound sorrow stems from their isolation, while his secret desire is for a migrated beast to notice their balm or hidden blessings.",
+              "world": "Carnivora",
+              "kingdom": "Swamp Whisperers",
+              "town": "Lagoon Somnolent"
+            }
+          }
+        },
+        "Salt Path Inn": {
+          "name": "Salt Path Inn",
+          "description": "Built precariously between two drifting mud-bogs along the 'Spider-track' trading path, this is the main stopping point for travelers. The sprawling, moss-covered inn caters to weary marsh-lords and pack riders, offering salted provisions. Itinerant storytellers often perform bare-legged on the drying mud-sheets. The inn's resilience against shifting grounds speaks to its long, adaptable history.",
+          "world": "Carnivora",
+          "npcs": {
+            "Shimmer, the Teller": {
+              "name": "Shimmer, the Teller",
+              "description": "Shimmer has spindly legs covered in moss and tends to stand barefoot on trails during performances. She's an itinerant entertainer who spins tales at inns like the Salt Path Inn. Shimmer craves a permanent place away from movers and eaters, a desire quickly overshadowed by the constant threat of disruption and disorientation faced by all in Carnivora.\n",
+              "world": "Carnivora",
+              "kingdom": "Swamp Whisperers",
+              "town": "Salt Path Inn"
+            },
+            "Kaelen, the Link": {
+              "name": "Kaelen, the Link",
+              "description": "Kaelen keeps Swamp Whisperers close, grounded on their hides with reverence. He interprets the baleful marsh-lords' commands, mediating precarious encounters. He wishes to uncover the whispers hidden beneath the Swamp Whisperers' cautious facade, hoping to find a better way than their siren-city existence.\n",
+              "world": "Carnivora",
+              "kingdom": "Swamp Whisperers",
+              "town": "Salt Path Inn"
+            },
+            "Grumbles, the Fixer": {
+              "name": "Grumbles, the Fixer",
+              "description": "Grumbles shoulders the Salt Path Inn's heavy timber frame, his worn boots echoing on the moss. He sells bleached goods to the sparse pack-riders, including guardians. He desires unheard-of, non-vanishing trade, hungering for items that remain steady as the mud-logs beneath his feet crumble.",
+              "world": "Carnivora",
+              "kingdom": "Swamp Whisperers",
+              "town": "Salt Path Inn"
+            }
+          }
+        }
+      }
+    },
+    "Sand Ring Nomads": {
+      "name": "Sand Ring Nomads",
+      "description": "A dynamic, mobile society built around predictably appearing celestial beasts, they ride the clouds like contemporary desert caravans. Their leaders are gifted seers and chieftains who lead groups of integrated beastriders. This civilization arose from nomadic tribes learning to trust the cosmic migrations centuries ago.",
+      "world": "Carnivora",
+      "towns": {
+        "Sky-Harbor Stronghold": {
+          "name": "Sky-Harbor Stronghold",
+          "description": "Built onto the back of a banded storm-whisperer, this vast air-fortress drifts between known settlements. Bustling markets sell salvaged flight-gear and hours of intense cloud-raft riding. It prides itself on its independent spirit and skilled secessionist warriors.\n",
+          "world": "Carnivora",
+          "npcs": {
+            "Elara of the Sky-Harbor": {
+              "name": "Elara of the Sky-Harbor",
+              "description": "Elara, a wiry woman with bleached hair tied back and steady, cloud-gray eyes, is the reluctant First Harvester of Sky-Harbor Stronghold. Placed in charge by a council eager for independence after her garrisons executed a swift border raid, she ensures the city's food supplies are adequate at the bustling market stalls. Publicly, she desires nothing more than security and the freedom to ride the clouds like any citizen; privately, she longs to replicate the raid's success on a larger scale, hoping it brings Sky-Harbor real autonomy, not just annoyance from rivals below.\n",
+              "world": "Carnivora",
+              "kingdom": "Sand Ring Nomads",
+              "town": "Sky-Harbor Stronghold"
+            },
+            "Borin, the Razor-Whisper": {
+              "name": "Borin, the Razor-Whisper",
+              "description": "Borin stands tall with weathered skin, a prominent brow ridge like seer-lore suggests, and eyes that seem to slide from sharp focus to apparent blankness, warning of 'whispers' that surface only weeks before inevitable storms or discovery. He guides his cherished scaled companion, a cloud-soarer needed for bridging ruins, using vague gestures and general directions. He desires for his deeper visions to be recognized as crucial guidance, avoiding the pitfalls of poor decisions recently suffered by his flock's ancestors.\n",
+              "world": "Carnivora",
+              "kingdom": "Sand Ring Nomads",
+              "town": "Sky-Harbor Stronghold"
+            },
+            "Kaelen the Sharpened Rim Artist": {
+              "name": "Kaelen the Sharpened Rim Artist",
+              "description": "Kaelen keeps watch from the oldest, craggiest observation deck on the broad back of his storm-beast, surveying corroded tech and the sleeping mass below. Striking scarlet tribal paint marks him as an educator, often narrating seen events with quizzical detachment; his creations depict the intricate dances of sky-packs and ancient cosmic migrations. He feels duty dragged thin, questioning the driven devotion needed for survival against a backdrop of slow decay, yearning perhaps for the simpler existence of following instinct, even feeling a strange, fading acceptance for the beast's own necessary fate.",
+              "world": "Carnivora",
+              "kingdom": "Sand Ring Nomads",
+              "town": "Sky-Harbor Stronghold"
+            }
+          }
+        },
+        "Cinderport": {
+          "name": "Cinderport",
+          "description": "A vital trading hub crammed onto a volcanic coastline where smoke spirals toward the sky-beasts. Steam-powered lifts ferry goods between precarious stone tiers carved from cooling lava. Its history is linked to a past pact repudiated generations ago, blamed for nearby, smaller fiery towns vanishing from history books.\n",
+          "world": "Carnivora",
+          "npcs": {
+            "Shard": {
+              "name": "Shard",
+              "description": "An elderly stone-weaver from Cinderport whose intricate work of carving steam-lift pathways earns the respect of the city's inhabitants; though respected, he fears the end of an era as powerful cloud-factions consolidate power, forcing Cinderport into a desperate scramble for survival amidst smoldering tensions over broken celestial vows.\n",
+              "world": "Carnivora",
+              "kingdom": "Sand Ring Nomads",
+              "town": "Cinderport"
+            },
+            "Kaelen": {
+              "name": "Kaelen",
+              "description": "A respected tracker with eyes like hawk-scans and a deep knowledge of the sky-beasts' migratory drifts among the Cloud Cities; he deeply believes in the ancient nomadic ways but privately questions the futility of following traditions that strand younger generations unless he can find lost heritage routes that suggest a changing world, a thought his chieftain forbids.\n",
+              "world": "Carnivora",
+              "kingdom": "Sand Ring Nomads",
+              "town": "Cinderport"
+            },
+            "Thorne": {
+              "name": "Thorne",
+              "description": "The brooding, silent midshipman aboard a Sand Ring trade vessel, a descendant of those who broke the old treaty; he inherited his father's legendary stamina on the backs of beast-whispers but carries the bitter memory of his town's vanished kin. He longs for knowledge and connection but drifts through the stations like lost ice, feeling adrift from both his duties and his heritage.",
+              "world": "Carnivora",
+              "kingdom": "Sand Ring Nomads",
+              "town": "Cinderport"
+            }
+          }
+        },
+        "Sunken Depths Outpost": {
+          "name": "Sunken Depths Outpost",
+          "description": "Hamstrung upon the teardrop foundation of an ancient, gentle earth-bear, this town relies on steady, patient trade with outer nomads. Known for its vast, silent bone-harbor holding countless beastrider mounts paid for with grievances long forgotten or futures famously predicted.",
+          "world": "Carnivora",
+          "npcs": {
+            "Kaelen": {
+              "name": "Kaelen",
+              "description": "Kaelen is a wiry rider built for endurance, with a face deeply marked by desert sun and a stern expression. He tends to his mounts and manages trade exchanges at the bustling bone-harbor. Kaelen clings to the memory of his family left behind on an earth-bear, a beautiful statue of one they owned which might chart what's left of their lives. He wishes to find a spouse who understands the ache of raising a family in a town that moves with the beast's muscles.\n",
+              "world": "Carnivora",
+              "kingdom": "Sand Ring Nomads",
+              "town": "Sunken Depths Outpost"
+            },
+            "Jora": {
+              "name": "Jora",
+              "description": "Jora has long, dark hair always pinned up with temple bones and a surprisingly gentle gaze. She is the kindly keeper and cleaner of the town's vast archive of artifacts and strategies, the collection known as the Whispering Skyscraper. Jora feels the growing detachment as her ancestors are forgotten, replaced by newer generations dreaming of the future. She desires only for the echoes of the past to be preserved with the same reverence demanded by the heavens.\n",
+              "world": "Carnivora",
+              "kingdom": "Sand Ring Nomads",
+              "town": "Sunken Depths Outpost"
+            },
+            "Roric": {
+              "name": "Roric",
+              "description": "Roric has sun-weathered hands perpetually tanned leather and quick eyes that dart about nervously on their sky-wind mount. He is a practiced beast-tamer, adapting his routine to different riders and mounts each ancient migration. Roric feels the constant strain of uncertainty and management needed to survive a harsh, capricious sky. He secretly dreams of one day securing a small, permanent home.",
+              "world": "Carnivora",
+              "kingdom": "Sand Ring Nomads",
+              "town": "Sunken Depths Outpost"
+            }
+          }
+        }
+      }
+    }
+  },
+  "timestamp": "2025-06-11T02:46:11.353319"
+}

@@ -21,12 +21,15 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         # Set the application settings
-        self.setWindowTitle("Welcome to the AI DM Application")
+        self.setWindowTitle("Welcome to the AI DM Application!")
         self.setMinimumSize(400, 200)
 
-        # Start the app with the welcome page
+        # Start the app with the welcome page ,
         self.welcome_view = WelcomeView(self)
         self.setCentralWidget(self.welcome_view)
+
+        # Connect emitted signals to handlers
+        self.welcome_view.name_submitted.connect(self.show_app_view)
 
     def show_app_view(self, name: str):
         """
