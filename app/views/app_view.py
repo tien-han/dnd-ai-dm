@@ -6,6 +6,8 @@ from PyQt6.QtWidgets import (
     QWidget, QLabel, QVBoxLayout, QLineEdit, QComboBox, QTextEdit, QPushButton
 )
 from app.logic import AIHandler, LoadGame
+from charset_normalizer.cd import characters_popularity_compare
+from datetime import datetime
 
 class AppView(QWidget):
     """
@@ -50,7 +52,7 @@ class AppView(QWidget):
         #Dm message chat box
         self.dm_message = QTextEdit()
         self.dm_message.setReadOnly(True)
-        layout.addWidget(QLabel("DM:"))
+        layout.addWidget(QLabel("Game:"))
         layout.addWidget(self.dm_message)
 
         #Users message area    Could later change user to character name
@@ -71,10 +73,31 @@ class AppView(QWidget):
             Function to allow message back and forth to ai, allows no
             message to be sent as well and will still receive a reply.
         """
-        system_prompt = "You are a creative Dungeon Master for a fantasy RPG."
+        character_name = self.character_name_input.text()
+        character_race = self.race_dropdown.currentText()
+        character_class = self.class_dropdown.currentText()
+        character_gender = self.gender_dropdown.currentText()
         user_text = self.user_input.text()
         if user_text.strip():
-            self.dm_message.append(f"<b>You:</b> {user_text}")
-        response = self.ai_handler.get_ai_response(system_prompt, user_text)
+            full_user_message = (
+                f"{character_name} ({character_race} {character_class}, {character_gender}) says: {user_text}"
+            )
+            self.dm_message.append(f"<b>You:</b> {full_user_message}")
+        else:
+            full_user_message = (
+                f"{character_name} ({character_race} {character_class}, {character_gender}) is waiting silently..."
+            )
+        user_entry = {
+            "role": "user",
+            "message": full_user_message,
+            "timestamp": datetime.now().isoformat()
+        }
+        system_prompt = "You are a creative Dungeon Master for a fantasy RPG."
+        response = self.ai_handler.get_ai_response(system_prompt, full_user_message)
         self.dm_message.append(f"<b>DM:</b> {response}")
+        dm_entry = {
+            "role": "dm",
+            "message": response,
+            "timestamp": datetime.now().isoformat()
+        }
         self.user_input.clear()

@@ -22,7 +22,7 @@ class MainWindow(QMainWindow):
 
         # Set the application settings
         self.setWindowTitle("Welcome to the AI DM Application!")
-        self.setMinimumSize(400, 200)
+        self.setMinimumSize(800, 600)
 
         # Start the app with the welcome page ,
         self.welcome_view = WelcomeView(self)
