@@ -16,6 +16,12 @@ class ProcessGameInput():
         self.file_handler = FileSaverAndLoader()
         self.world_data = world_data
 
+    def save_character(self, character_data):
+        """Save the character information the user has created."""
+        LOG.info("Processing the character form submission.")
+
+        self.file_handler.save_player(character_data)
+
     def create_initial_scene(self, kingdom, town, character, race, user_class, gender):
         """Create the initial scene for the game."""
         LOG.info("Creating initial story...")
