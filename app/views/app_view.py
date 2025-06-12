@@ -5,7 +5,7 @@
 from PyQt6.QtWidgets import (
     QWidget, QLabel, QVBoxLayout, QLineEdit, QComboBox, QTextEdit, QPushButton
 )
-from app.logic import AIHandler, LoadGame
+from app.logic import AIHandler, LoadGame, ProcessGameInput
 
 class AppView(QWidget):
     """
@@ -16,6 +16,7 @@ class AppView(QWidget):
         super().__init__()
         self.ai_handler = AIHandler()
         self.world_data = LoadGame().get_world_data()
+        self.process_input = ProcessGameInput(self.world_data)
 
         message = QLabel(f"Hello, {name}! Now choose your character info!" if name else "Hello!")
         message.setStyleSheet("font-size: 20px; color: green")
