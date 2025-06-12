@@ -15,14 +15,15 @@ class ProcessGameInput():
         self.ai_handler = AIHandler()
         self.file_handler = FileSaverAndLoader()
         self.world_data = world_data
+        self.character = None
 
     def save_character(self, character_data):
         """Save the character information the user has created."""
         LOG.info("Processing the character form submission.")
-
+        self.character = character_data
         self.file_handler.save_player(character_data)
 
-    def create_initial_scene(self, kingdom, town, character, race, user_class, gender):
+    def create_initial_scene(self, kingdom, town):
         """Create the initial scene for the game."""
         LOG.info("Creating initial story...")
 
@@ -35,18 +36,19 @@ class ProcessGameInput():
             Write in second person. For example: "You are Jack"
             Write in present tense. For example "You stand at..."
             First describe the character and their backstory.
-            Then describes where they start and what they see around them.
+            Then describe where they start and what they see around them.
         """
         world_info = f"""
             World: {self.world_data}
-            Kingdom: {self.world_data["kingdoms"][kingdom]}
-            Town: {self.world_data["kingdoms"][kingdom][town]}
-            Your Character: {character}
-            Your Race: {race}
-            Your Class: {user_class}
-            Your Gender: {gender}
+            Kingdom: {kingdom}
+            Town: {town}
+            Your Character: {self.character["name"]}
+            Your Race: {self.character["race"]}
+            Your Class: {self.character["class"]}
+            Your Gender: {self.character["gender"]}
             Your Start:
         """
 
         response = self.ai_handler.get_ai_response(system_prompt, world_info)
         LOG.info("Created initial story start:\n%s", response)
+        return response

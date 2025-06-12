@@ -40,6 +40,8 @@ class AppView(QWidget):
             self.send_message()
         else:
             self.submit_form_and_update_page()
+            self.get_starting_dialogue()
+            self.adventure_started = True
 
     def submit_form_and_update_page(self):
         """Submit the initial character creation form."""
@@ -52,20 +54,13 @@ class AppView(QWidget):
         self.lore_window.set_lore_text()
         self.layout.insertWidget(1, self.lore_window)
 
-        # Greet and introduce the player to the game
-        world_name = self.world_data.get("name", "Unknown World")
+    def get_starting_dialogue(self):
+        """Get and show the initial dialoge to start the game."""
         first_kingdom = next(iter(self.world_data.get("kingdoms", {}).values()), {})
-        kingdom_name = first_kingdom.get("name", "Unknown Kingdom")
         first_town = next(iter(first_kingdom.get("towns", {}).values()), {})
-        town_name = first_town.get("name", "Unknown Town")
-        world_intro = (
-            f"Welcome to the world of {world_name}.\n"
-            f"You find yourself in the kingdom of {kingdom_name}\n, "
-            f"near the town of {town_name}.\n"
-            f"What would you like to do?"
-        )
-        self.dm_chat.append_dm_message(world_intro)
-        self.adventure_started = True
+        starting_dialogue = self.process_input.create_initial_scene(first_kingdom, first_town)
+
+        self.dm_chat.append_dm_message(starting_dialogue)
 
     def send_message(self):
         """
