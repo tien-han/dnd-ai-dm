@@ -54,7 +54,7 @@ class FileSaverAndLoader:
         """Load player information from a local file."""
         LOG.info("Loading player information.")
 
-        if not os.path.exists(self.player_file):
+        if not os.path.exists(self.player_file) or os.path.getsize(self.player_file) == 0:
             return []
         with open(self.player_file, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -82,7 +82,7 @@ class FileSaverAndLoader:
         """Load chat interactions from a local file."""
         LOG.info("Loading chat history.")
 
-        if not os.path.exists(self.chat_file):
+        if not os.path.exists(self.chat_file) or os.path.getsize(self.chat_file) == 0:
             return []
         with open(self.chat_file, "r", encoding="utf-8") as f:
             return json.load(f)

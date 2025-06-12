@@ -51,4 +51,8 @@ class ProcessGameInput():
 
         response = self.ai_handler.get_ai_response(system_prompt, world_info)
         LOG.info("Created initial story start:\n%s", response)
+
+        # Save the selected lore and the generated dialogue to the chat history
+        self.file_handler.save_chat("info", world_info)
+        self.file_handler.save_chat("dm", response)
         return response
