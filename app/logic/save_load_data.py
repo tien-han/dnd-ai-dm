@@ -68,8 +68,10 @@ class FileSaverAndLoader:
             "message": message,
             "timestamp": datetime.now().isoformat()
         }
+
         history = []
-        if os.path.exists(self.chat_file):
+
+        if os.path.exists(self.chat_file) and os.path.getsize(self.chat_file) > 0:
             with open(self.chat_file, "r", encoding="utf-8") as chat_file:
                 history = json.load(chat_file)
 
