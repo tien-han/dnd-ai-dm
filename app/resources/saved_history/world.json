@@ -1,280 +1,280 @@
 {
-  "name": "Carnivora",
-  "description": "Giant, long-lived beast-titans inhabit the skies and clouds of Carnivora, forming symbiotic relationships with the descendants of ancient warriors who built their floating city-structures directly onto their backs. These cities are vast, complex metropolises moving with the beasts' rhythms, centered around areas like dining halls and resting platforms. Each 'flock' of beasts and their passengers follows ancient migratory routes dictated by resource availability and pack cooperation.",
+  "name": "Suncliff Callows",
+  "description": "In Suncliff Callows, sapient humanoids simply cannot bear to live on the ground, stranding the world below to its inherent perils. They instead carefully cultivate and house entire ecosystems onto the backs of giant, gentle mammoth-like beasts, building floating forest-cities known as 'Callows' that drift through lush clouds. The beasts slowly migrate, bringing onshore rain wherever their vast herds tread, nurturing a unique symbiotic culture.",
   "kingdoms": {
-    "Temple Peaks": {
-      "name": "Temple Peaks",
-      "description": "The Temple Peaks region features massive, immobile mountains chosen for their spiritual resonance and connection to ancient traditions. Leaders are revered high-priests or arch-druids acting as guides, and cultures focus on harmony and ritual. Their history revolves around establishing sacred sites on dormant beast-titan territories.\n",
-      "world": "Carnivora",
+    "Foothold Highcliff": {
+      "name": "Foothold Highcliff",
+      "description": "Foothold Highcliff consists of many trading city-states perched on the backs of sturdy Foothold Mammoths. Their society is built on hardy craftsmanship and intricate trade networks connecting their settlements. A proud lord and his noble wife often govern the largest city-state, fostering prosperity through exchange. Their culture values both the resilience needed to live high above and the delicate balance required within their floating forests.\n",
+      "world": "Suncliff Callows",
       "towns": {
-        "Serenity's Henge": {
-          "name": "Serenity's Henge",
-          "description": "Nestled beside a quiet peak known for its calming energy, Serenity's Henge is built in a sunken courtyard. The town center features an ancient, shaded grove and a simple temple sharing a sacred spring with the mountain beast-titan's resting area. Founded centuries ago, the town's history is tied to a powerful beast-titan whose migratory patterns naturally brought it to this tranquil spot, fostering a deep spiritual connection.\n",
-          "world": "Carnivora",
+        "Harbor Hinterhold": {
+          "name": "Harbor Hinterhold",
+          "description": "Harbor Hinterhold sits near the base of a large Foothold Mammoth herd migrating inland, making its location vital for trade. Its key areas include a bustling lumber market and an active deep-water dock where mammoth herds are often unloaded. Hinterhold's importance grew from its strategic base position during the Callow settlement expansion centuries ago.\n",
+          "world": "Suncliff Callows",
           "npcs": {
-            "Mirel": {
-              "name": "Mirel",
-              "description": "A young woman with practical leather apron and worn leggings, works as an apprentice keeper. She meticulously prepares tallow for lamps before large observatories in a city cantilevered on a beast-titan's back. Mirel feels the constant pressure of earning the beast-titan's favor, fearing her own worth might be judged unfairly. Her quiet desire is to prove herself through diligent study and forge a reliable connection.\n",
-              "world": "Carnivora",
-              "kingdom": "Temple Peaks",
-              "town": "Serenity's Henge"
+            "Brenna Stonehand": {
+              "name": "Brenna Stonehand",
+              "description": "Brenna is a sturdy woman with calloused hands and gray streaks in her dark brown hair, a lifetime spent outdoors. She's a Seasoned Trader working the lumber markets of Harbor Hinterhold, peddling goods across the Foothold Highcliff city-states on her mammoth. She desires simple home security, finding the constant floating unsettling for her family, while her deeper pain is the recurring fear of a catastrophic storm strandin**g them, making her secretly lobby for better stables near the burgeoning Callow kingdom despite official policies favoring strategic trade routes.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "Foothold Highcliff",
+              "town": "Harbor Hinterhold"
             },
-            "Keevan": {
-              "name": "Keevan",
-              "description": "An old man with silvery hair and skin deeply wrinkled, lives as a simple hermit tending to ancestral markers in the quiet Temple Peaks mountains. He offers cryptic guidance connected to ancient spirits within the stone mountains, rarely speaking more than warnings about disturbing the balance. Keevan suffers from loneliness and the weight of forgotten lore, fearing humanity forgets the ways of old. His deep hope is merely for the sacred sites to remain respected according to ancient traditions.\n",
-              "world": "Carnivora",
-              "kingdom": "Temple Peaks",
-              "town": "Serenity's Henge"
+            "Lord Valerius Ironthorne": {
+              "name": "Lord Valerius Ironthorne",
+              "description": "Lord Ironthorne is lean and sharp-featured, with hair the color of wind-whipped straw, often seen in his austere Judiciary uniform. He holds court in the capital city-state of Foothold Mammoth's Highcliff Ridge. He yearns for the stability of older, more grounded ways, believing the floating Callow life weakens tradition. His deepest pain stems from his wife's recent illness exacerbated by the dizzying height and unstable air currents, fueling private anxieties about the kingdom itself fracturing, though he publicly champions stability through careful trade and\u57ce\u5e02\u53d1\u5c55.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "Foothold Highcliff",
+              "town": "Harbor Hinterhold"
             },
-            "Sariel": {
-              "name": "Sariel",
-              "description": "A woman with quiet, focused eyes and simple robes, serves as a conflict mediator working between the diverse human populations living on the beasts' backs. She uses prolonged stillness and measured words to try and resolve disputes arising from resource sharing in the floating city. Sariel yearns for genuine acceptance in her community but feels trapped by the constant demands of her role and the inherent tensions between different circus factions.",
-              "world": "Carnivora",
-              "kingdom": "Temple Peaks",
-              "town": "Serenity's Henge"
+            "Phylidia Rootbreeze": {
+              "name": "Phylidia Rootbreeze",
+              "description": "Phylidia has unusually soft, almost mossy green eyes and keeps long, dark hair tied back loosely. She is a meticulous Sapling Tender, tending delicate juvenile trees and fungi on the lower decks of Wayward Oaks Callow in Harbor Hinterhold. She craves a deeper connection to the world below, particularly understanding its perceived dangers and perhaps settling momentarily there herself, perhaps with her fellow guide creature, Glorfindel. Her hidden desire is to eventually prove the ground isn't merely dangerous, but potentially safe and beautiful, matching the lushness of the Callow forests she meticulously nurtures.",
+              "world": "Suncliff Callows",
+              "kingdom": "Foothold Highcliff",
+              "town": "Harbor Hinterhold"
             }
           }
         },
-        "Dawnhold": {
-          "name": "Dawnhold",
-          "description": "Dawnhold sprawls awkwardly between two lower peaks, built generations ago on shifting bedrock beneath a protective beast-titan's wing. Key structures are the bustling market square and a resource-exchange hall. Its history involves bartering heavily with other towns using manufactured goods, relying on the beast-titan for safe transit across shifting peaks while avoiding the more remote summit temples.\n",
-          "world": "Carnivora",
+        "Grassy Knolls": {
+          "name": "Grassy Knolls",
+          "description": "Grassy Knolls occupies the tamer back-midsection of a mammoth, known for richer plant life and gentle slopes leading up. Important here is the central knoll-bounded stable yard and the common marketplace nestled below the main growth area. The town's history involves being overlooked for strategic importance, surviving on simple foraging and the products of the mammoth's lighter daily movement.\n",
+          "world": "Suncliff Callows",
           "npcs": {
+            "Talus the Stablemaster": {
+              "name": "Talus the Stablemaster",
+              "description": "With broad shoulders and leathery hands, Talus oversees Grassy Knolls' large stable yard. He's a steady worker managing the mammoth's temperamental rear legs, simple but clean in his Earth-like attire. He deeply desires his hermit reputation but fears his children inheriting Grassy Knolls' reputation for cowardice and neglect.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "Foothold Highcliff",
+              "town": "Grassy Knolls"
+            },
+            "Lady Ethelinda": {
+              "name": "Lady Ethelinda",
+              "description": "Ethelinda from Foothold Highcliff has fine features and appears polished, favoring light, airy fabrics. Her diplomatic role in trade matters is her main profession, though she neglects her duties to study mammoth behaviors. She longs to achieve true power in Highcliff society but fears failure due to her 'poor breeding' compared to the founding lords.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "Foothold Highcliff",
+              "town": "Grassy Knolls"
+            },
+            "Gorion the Hermit": {
+              "name": "Gorion the Hermit",
+              "description": "A wiry man with wild, spiky grey hair and a scholar's spectacles, Gorion is rarely seen in public. Disdaining mammoth comforts, he crafts scale-armor and researched cloud meadow inhabitants using ancient texts, his ramshackle study hidden. He secretly yearns to reveal the Callows' ancient dangers to sturdy Highcliff society, believing knowledge is more dangerous than they realize.",
+              "world": "Suncliff Callows",
+              "kingdom": "Foothold Highcliff",
+              "town": "Grassy Knolls"
+            }
+          }
+        },
+        "Shattered Echo": {
+          "name": "Shattered Echo",
+          "description": "Shattered Echo clings to the lower edges of a mammoth's back, under the canopy, sometimes gathering moss or unusual fungi. Its primary structures are the eerie Tortoise Well (legend says only the pure-hearted or desperate can successfully draw water) and the modest Temple of the Tremors. Once a bustling grain-transport hub, the town dwindled after a major herd migration disrupted its usual supply routes, leaving it mostly quiet and haunted by whispers of old inhabitants.",
+          "world": "Suncliff Callows",
+          "npcs": {
+            "Mella": {
+              "name": "Mella",
+              "description": "A fair-haired woman with tired eyes, always seen mending fishing nets near the Tortoise Well. Shattered Echo's caretaker, she finds solace in routine but yearns for the town to reclaim its former importance, haunted by whispers of souls lost. Her deeper pain is loneliness; she desires to belong, to see her past efforts truly count again.",
+              "world": "Suncliff Callows",
+              "kingdom": "Foothold Highcliff",
+              "town": "Shattered Echo"
+            },
             "Kaelen": {
               "name": "Kaelen",
-              "description": "Kaelen appears to be a middle-aged human with weathered features, perhaps a stammer from past scares on a moving city. He's a cartographer mapping the shifting bedrock of Dawnhold. He desperately craves stability, knowing his town's passage dictates his resources.\n",
-              "world": "Carnivora",
-              "kingdom": "Temple Peaks",
-              "town": "Dawnhold"
+              "description": "An older man with weathered hands and sharp eyes, once a prominent trader but now seen mending spars. He lives in Foothold Highcliff but remembers the days before Shattered Echo's decline. His pain is the fading of his significance; he struggles to adapt to a world that has passed him by.",
+              "world": "Suncliff Callows",
+              "kingdom": "Foothold Highcliff",
+              "town": "Shattered Echo"
             },
             "Elara": {
               "name": "Elara",
-              "description": "Elara has the lean build and sharp eyes of a hermit, favoring practical robes over ornate temple garb. She lives reclusively in a remote mountain-side shrine of the Temple Peaks. Despite her deep spiritual knowledge, she feels alienated by the reverence bestowed upon her by the cult she once guided.\n",
-              "world": "Carnivora",
-              "kingdom": "Temple Peaks",
-              "town": "Dawnhold"
-            },
-            "Roric": {
-              "name": "Roric",
-              "description": "Roric, a younger member of the Mhorvaan Savanna Watchers, possesses a certain youthful enthusiasm marked by roguish grins that seem unearned by the grim-faced guardsmen. He serves as a lower-level beast-titan rider, guiding smaller migratory beasts. He yearns for more independent action but faces fractures when the beasts' communal needs clash with commands born of fear or resource scarcity.",
-              "world": "Carnivora",
-              "kingdom": "Temple Peaks",
-              "town": "Dawnhold"
-            }
-          }
-        },
-        "Apex Guard": {
-          "name": "Apex Guard",
-          "description": "Apex Guard stands high and proud, its roofs angled to track the setting sun and spot distant threats. Training halls, barracks, and disciplined market stalls dominate its landscape, perched precariously atop a frequently traversed peak. Its history is marked by a long conflict with rival beast-lords early in the floating cities' history, establishing itself as a vital defensive network protecting routes.",
-          "world": "Carnivora",
-          "npcs": {
-            "Sven Gronstone": {
-              "name": "Sven Gronstone",
-              "description": "Sven is a sturdy, scarred man in his late 40s with weathered features and eyes that constantly scan the horizon. An Apex Guard soldier, he spends his days patrolling the treacherous heights. He constantly fears he will fail another patrol, letting someone he's sworn to protect down.",
-              "world": "Carnivora",
-              "kingdom": "Temple Peaks",
-              "town": "Apex Guard"
-            },
-            "Kaelen Bright-Horn": {
-              "name": "Kaelen Bright-Horn",
-              "description": "Kaelen is an respected Elder in a Temple Peaks clan, with smooth, grey skin like carved wood and prominent, spiraling horns. He serves as a spiritual guide leading pilgrimages to ancient sites. He deeply fears that the old ways will be forgotten as younger generations forgets the deep resonance with their beasts.",
-              "world": "Carnivora",
-              "kingdom": "Temple Peaks",
-              "town": "Apex Guard"
-            },
-            "Anya Whitewood": {
-              "name": "Anya Whitewood",
-              "description": "Anya is a wiry woman, quick with market bartering. An Apex Guard-based pack-trader relies on the route's safety for her livelihood. She generally desires safe travel for her packs, but financially needs the resource-rich but turbulent southlands, creating internal conflict.",
-              "world": "Carnivora",
-              "kingdom": "Temple Peaks",
-              "town": "Apex Guard"
+              "description": "A woman with kind eyes and features reflecting the land below, the Shattered Echo Temple's primary weaver and healer. Bereaved after her husband likely died during the migration, she shares her home and care with her five-year-old daughter. Her pain is the constant ache of loss and her duty; she desires strength and safety, fearing her child will endure similar hardships.",
+              "world": "Suncliff Callows",
+              "kingdom": "Foothold Highcliff",
+              "town": "Shattered Echo"
             }
           }
         }
       }
     },
-    "Swamp Whisperers": {
-      "name": "Swamp Whisperers",
-      "description": "This small, isolated nation dwells within the eerie heart-swamps, living off unique flora and the cautious interactions with local, less dominant beasts. Their leaders are cunning marsh-lords who divine tides and whispers. Their secret history involves ancient-seeming, misplaced ruins barely connected to the main migratory paths.\n",
-      "world": "Carnivora",
+    "The Steadfast Herd": {
+      "name": "The Steadfast Herd",
+      "description": "Thriving on the larger, gentler Compass Steppers, the Steadfast Herd dwells in nomadic, clan-like clusters rather than distinct city-states. Their history involves a much older migration onto these beasts, maintaining some ancient coastal or plains traditions. Both a head Elder and a wise Spokeswoman guide their communities, ensuring smooth transitions between herds. They value unity and the long view, following the beasts' comforting drift across the clouds.\n",
+      "world": "Suncliff Callows",
       "towns": {
-        "Riverwatch Post": {
-          "name": "Riverwatch Post",
-          "description": "This small settlement serves as the main gathering point on the slow-moving Green Silt River. It stretches along the water's edge with basic huts and reed-thatched homes, surrounded by strangely luminescent riverweed. Their history traces back to when the first marsh explorers established this outpost to monitor river tides and scout for potential trouble upstream.\n",
-          "world": "Carnivora",
+        "Wave- Runner Callow": {
+          "name": "Wave- Runner Callow",
+          "description": "Along the vibrant flight-path over ancient ocean currents, the Wave-Runner thrives. Its market place buzzes with trappers and feed merchants. Long ago, a fierce Callow warred against Callows trying to sail into deeper water.\n",
+          "world": "Suncliff Callows",
           "npcs": {
-            "Kaelen the Trader": {
-              "name": "Kaelen the Trader",
-              "description": "Kaelen has weathered skin and packs common river-dwelling supplies. He mostly deals goods from the Sky Cities to upstream settlements. His deeper pain is maintaining a steady supply; his desire is reliable passage and trade profits.\n",
-              "world": "Carnivora",
-              "kingdom": "Swamp Whisperers",
-              "town": "Riverwatch Post"
+            "Olena Redhand": {
+              "name": "Olena Redhand",
+              "description": "Olena runs the busiest spice stall at Wave-Runner's market, known for her bright ginger hair braided with amber beads and practical, colourful work aprons. She's a capable trader who learned the price of everything by heart long before joining the Callows. Olena's deep pain is the ache in her 'feet' for the rare, downpour-forest goods left behind below, while her desire is rooted in securing enough 'traded treasures' to return to the ancient, sun-baked lands she only remembers from stories.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "The Steadfast Herd",
+              "town": "Wave- Runner Callow"
             },
-            "Elara": {
-              "name": "Elara",
-              "description": "A young woman with restless eyes who navigates the marsh canoes. She scouts trade routes and monitors river changes for the settlement. Her pain is the pressure to prove herself to the ruling marsh-lords; her desire is to explore the dangerous heart of the swamp.\n",
-              "world": "Carnivora",
-              "kingdom": "Swamp Whisperers",
-              "town": "Riverwatch Post"
+            "Mordain Scalp": {
+              "name": "Mordain Scalp",
+              "description": "Mordain is an Elder of Wave-Runner Callow, marking long service not by years but by the migration circles around him. His weathered face is sprinkled with more silver than hair, and he often has maps folded maps tucked beneath his rumpled cloak. He holds a respected, though frustrating, position keeping the herd paths clear and traditions alive. Mordain's primary pain is the weariness of planning for slow, permanent loss, his hidden desire being that this time, the younger generations safer migration might avoid a deadly 'ground-shadow'.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "The Steadfast Herd",
+              "town": "Wave- Runner Callow"
             },
-            "Borin the Elder": {
-              "name": "Borin the Elder",
-              "description": "An ancient resident with a network of deep wrinkles and knowledgeable eyes, he collects riverweed and tells local tales. He feels the weight of the marsh secrets; his desire is to understand the whispers behind the history that connects his nation to forgotten places.",
-              "world": "Carnivora",
-              "kingdom": "Swamp Whisperers",
-              "town": "Riverwatch Post"
+            "Harmony Veil": {
+              "name": "Harmony Veil",
+              "description": "A blue-skinned, wind-whispered Herdherder from Wave-Runner, Harmony has swimming-green eyes like ocean currents below. She spends days tending ropes securing floating platforms for herding nets during the herd's flight. Her expertise includes navigating dangerous updrafts and identifying shore-clearing rain patterns. Harmony's deepest pain is losing a younger kinsperson to falling debris during a 'migrate event', her profound desire being to discover safe coastal routes their ancestors used before leaving the drowned lands below.",
+              "world": "Suncliff Callows",
+              "kingdom": "The Steadfast Herd",
+              "town": "Wave- Runner Callow"
             }
           }
         },
-        "Lagoon Somnolent": {
-          "name": "Lagoon Somnolent",
-          "description": "A hidden haven nestled beneath the turtle-draped shores of a shallow, moonlit lagoon, Lagoon Somnolent is barely connected to the rest of the swamp network. Its center is a naturally formed spring cave that provides unique balm to those suffering from 'sog sickness'. Whispered tales speak of spirits dwelling in the deep silt there. Their isolation likely protects them but also makes them wary outsiders.\n",
-          "world": "Carnivora",
+        "Ancient Sky Callow": {
+          "name": "Ancient Sky Callow",
+          "description": "Nestled near the migration route crossing mysterious glowing peaks, this Callow features an unnaturally high sky. The elders' gathering place there is connected to the peaks' ancient magic. It fought a long battle against unsettling moon-grazers a generation ago.\n",
+          "world": "Suncliff Callows",
           "npcs": {
-            "Marshweaver": {
-              "name": "Marshweaver",
-              "description": "A middle-aged shaman with smudged tattoos and sightless eyes, cleansed by swamp mists. He studies ancient patterns in the marsh-ruins, seeking forgotten truths. His deepest pain is the fading whispers of his family's legacy, while he desires to unlock secrets that might save the swamp.\n",
-              "world": "Carnivora",
-              "kingdom": "Swamp Whisperers",
-              "town": "Lagoon Somnolent"
+            "Lira Swift-Shade": {
+              "name": "Lira Swift-Shade",
+              "description": "She has messy dark hair usually falling loose (only tied back if receiving important calling mission). She tends flat caps worn low over her eyes, hiding messy facial hair, giving her a perpetually weary appearance. Officially, she's a lower-level Arkwright and Spokeswoman's Assistant at the Ancient Sky Callow archives, cataloging data on the compass steppers. Her deeper desire is to climb one of the nearby glowing peaks and understand its ancient power without the colony elders forcing her to. Her main pain is the feeling of constantly being jumped on and the daily anxiety about her herd not behaving, making their whole community drift and potentially skip valuable rain-shelter spots.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "The Steadfast Herd",
+              "town": "Ancient Sky Callow"
             },
-            "Greenbark Fisher": {
-              "name": "Greenbark Fisher",
-              "description": "A wiry tracker with tangled green hair, climbing slimy rocks with practiced ease. He navigates the shallow channels using localized currents and shoals. His bitter longing is for a partner to settle the lagoon's 'fickle paths', even if it means leaving the silt-spirits behind.\n",
-              "world": "Carnivora",
-              "kingdom": "Swamp Whisperers",
-              "town": "Lagoon Somnolent"
+            "Harald Stone-brow": {
+              "name": "Harald Stone-brow",
+              "description": "Harald has a sturdy build honed by life atop his gentle mammoth, Strongwind. He has a clear, thoughtful gaze and rock-like calm, though a practiced soldier's stoicism hides his fears. Officially, he's Head Guardian, responsible for commandong the smaller troupe that tends the lower edges of the Sky Callow. His deep desire is his family's safe return; they were last seen migrating past these peaks years ago. This causes him constant discomfort and alerts him to any potential threat. His deeper pain is the recurring fear in everyone, especially his family, about the unsettling creatures called moon-grazers haunting the skies again. His desire is to find a way to ensure their safety during the herd's next Great Drift.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "The Steadfast Herd",
+              "town": "Ancient Sky Callow"
             },
-            "Elder Salt-Stone": {
-              "name": "Elder Salt-Stone",
-              "description": "An ancient figure, mostly blind, commanding the town from a mossy chair near the spring. He speaks with a deep, resonant voice and the weight of unshared time. His profound sorrow stems from their isolation, while his secret desire is for a migrated beast to notice their balm or hidden blessings.",
-              "world": "Carnivora",
-              "kingdom": "Swamp Whisperers",
-              "town": "Lagoon Somnolent"
+            "Faelar Wild-Root": {
+              "name": "Faelar Wild-Root",
+              "description": "Faelar is a quiet soul with long, slightly uneven fingers and forced neatness. He has bird-like dark eyes that hold unspoken worries. In his profession, he is quite skilled as an Elder's informant and functionary, keeping some ancient coastal rituals alive within the Callow. His great desire is to find a lasting connection, a home, not just the shifting treetops. He hopes to use traditional ways he knows to properly bond with the herd they're currently on. His pain and deepest worry is the old legend whispered in his mentor's dusty tales. He fears there is a forbidden magic hidden in the sky, possibly related to the glowing peaks, that could disturb this delicate Callow existence.",
+              "world": "Suncliff Callows",
+              "kingdom": "The Steadfast Herd",
+              "town": "Ancient Sky Callow"
             }
           }
         },
-        "Salt Path Inn": {
-          "name": "Salt Path Inn",
-          "description": "Built precariously between two drifting mud-bogs along the 'Spider-track' trading path, this is the main stopping point for travelers. The sprawling, moss-covered inn caters to weary marsh-lords and pack riders, offering salted provisions. Itinerant storytellers often perform bare-legged on the drying mud-sheets. The inn's resilience against shifting grounds speaks to its long, adaptable history.",
-          "world": "Carnivora",
+        "Lush Altar Callow": {
+          "name": "Lush Altar Callow",
+          "description": "High above verdant islands where hopefuls bathe in profound spiritual rains, this Callow offers rare, potent crystals. Pilgrims travel here for offerings, drawn to its world-renowned sanctuary. Historically, it hosted scholars exploring the rain's powerful calming energies.",
+          "world": "Suncliff Callows",
           "npcs": {
-            "Shimmer, the Teller": {
-              "name": "Shimmer, the Teller",
-              "description": "Shimmer has spindly legs covered in moss and tends to stand barefoot on trails during performances. She's an itinerant entertainer who spins tales at inns like the Salt Path Inn. Shimmer craves a permanent place away from movers and eaters, a desire quickly overshadowed by the constant threat of disruption and disorientation faced by all in Carnivora.\n",
-              "world": "Carnivora",
-              "kingdom": "Swamp Whisperers",
-              "town": "Salt Path Inn"
+            "Sol the Tendr": {
+              "name": "Sol the Tendr",
+              "description": "Sol is a sturdy woman with weathered hands and calm gray eyes, often found tending her grazingcompass steppernear the Callow's southern edge. She's a primary herdbinder tasked with ensuring the herd's health and comfort. Sol yearns for the certainty of ground roots, the comfort of soil beneath her Callow. Though her herd exploits the clouds safely, she fears disaster and worries her sons will never truly forget what stable land feels like.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "The Steadfast Herd",
+              "town": "Lush Altar Callow"
             },
-            "Kaelen, the Link": {
-              "name": "Kaelen, the Link",
-              "description": "Kaelen keeps Swamp Whisperers close, grounded on their hides with reverence. He interprets the baleful marsh-lords' commands, mediating precarious encounters. He wishes to uncover the whispers hidden beneath the Swamp Whisperers' cautious facade, hoping to find a better way than their siren-city existence.\n",
-              "world": "Carnivora",
-              "kingdom": "Swamp Whisperers",
-              "town": "Salt Path Inn"
+            "Ashara the Cantrip": {
+              "name": "Ashara the Cantrip",
+              "description": "Ashara is thin, almost spectral with sharp, tired eyes and hair the color of dried moss, a subtle artisan crafting small, intricate tools from polished crystal. She lives as a crystalworker at the Callow's archive. Ashara desperately dreams of purifying her inner turmoil through studying the profoundly calming spiritual rain. She suspects the calming, comforting Lens Rain is the key to managing her deeper, unspoken nature.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "The Steadfast Herd",
+              "town": "Lush Altar Callow"
             },
-            "Grumbles, the Fixer": {
-              "name": "Grumbles, the Fixer",
-              "description": "Grumbles shoulders the Salt Path Inn's heavy timber frame, his worn boots echoing on the moss. He sells bleached goods to the sparse pack-riders, including guardians. He desires unheard-of, non-vanishing trade, hungering for items that remain steady as the mud-logs beneath his feet crumble.",
-              "world": "Carnivora",
-              "kingdom": "Swamp Whisperers",
-              "town": "Salt Path Inn"
+            "Croaker Tinpot": {
+              "name": "Croaker Tinpot",
+              "description": "Croaker Tinpot has a pepper-gray beard, carries himself with a quiet, watchful confidence, and serves as an observer documenting herd life. A master perceiver of clues often found wanting by the Callow elders, Croaker scours Lush Altar for unique insights. He secretly desires to fundamentally change the herd's approach to documenting their existence.",
+              "world": "Suncliff Callows",
+              "kingdom": "The Steadfast Herd",
+              "town": "Lush Altar Callow"
             }
           }
         }
       }
     },
-    "Sand Ring Nomads": {
-      "name": "Sand Ring Nomads",
-      "description": "A dynamic, mobile society built around predictably appearing celestial beasts, they ride the clouds like contemporary desert caravans. Their leaders are gifted seers and chieftains who lead groups of integrated beastriders. This civilization arose from nomadic tribes learning to trust the cosmic migrations centuries ago.",
-      "world": "Carnivora",
+    "Sky-Herders of Zephyr": {
+      "name": "Sky-Herders of Zephyr",
+      "description": "The Sky-Herders are the nomads of Suncliff, masters of the swift and magnificent Zephyr Flyers. They follow the winds and best forage lands, their history marked by brief hospitality towards other breeders seeking escape below. Their pragmatic Grey Lords, chosen for wisdom and interaction with the beasts, rule independent bands. Beneath the gentle gravity, they supplement local knowledge with skills learned from more settled kingdoms or isolated mountain refuges.",
+      "world": "Suncliff Callows",
       "towns": {
-        "Sky-Harbor Stronghold": {
-          "name": "Sky-Harbor Stronghold",
-          "description": "Built onto the back of a banded storm-whisperer, this vast air-fortress drifts between known settlements. Bustling markets sell salvaged flight-gear and hours of intense cloud-raft riding. It prides itself on its independent spirit and skilled secessionist warriors.\n",
-          "world": "Carnivora",
+        "Fogbound Trading Post": {
+          "name": "Fogbound Trading Post",
+          "description": "Nestled atop a primary Zephyr herding route through misty valleys, Fogbound serves as a bustling market. Its grand central plaza is surrounded by timber-and-cloth-roofed stalls. Founded centuries ago by resourceful herders, the town thrives by sharing goods and news with distant floating holdings.\n",
+          "world": "Suncliff Callows",
           "npcs": {
-            "Elara of the Sky-Harbor": {
-              "name": "Elara of the Sky-Harbor",
-              "description": "Elara, a wiry woman with bleached hair tied back and steady, cloud-gray eyes, is the reluctant First Harvester of Sky-Harbor Stronghold. Placed in charge by a council eager for independence after her garrisons executed a swift border raid, she ensures the city's food supplies are adequate at the bustling market stalls. Publicly, she desires nothing more than security and the freedom to ride the clouds like any citizen; privately, she longs to replicate the raid's success on a larger scale, hoping it brings Sky-Harbor real autonomy, not just annoyance from rivals below.\n",
-              "world": "Carnivora",
-              "kingdom": "Sand Ring Nomads",
-              "town": "Sky-Harbor Stronghold"
+            "Kaelen the Rock-Nosed": {
+              "name": "Kaelen the Rock-Nosed",
+              "description": "Kaelen is a burly Sky-Herder with a large, careworn nose that heals easily, a hereditary trait. He grows and handles the sturdy Flyers, travelling between Callows. He deeply yearns for a stable home, unlike the Whisperwind tall buildings drifting past a lifetime ago, fearing he's just a drifter, rootless.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "Sky-Herders of Zephyr",
+              "town": "Fogbound Trading Post"
             },
-            "Borin, the Razor-Whisper": {
-              "name": "Borin, the Razor-Whisper",
-              "description": "Borin stands tall with weathered skin, a prominent brow ridge like seer-lore suggests, and eyes that seem to slide from sharp focus to apparent blankness, warning of 'whispers' that surface only weeks before inevitable storms or discovery. He guides his cherished scaled companion, a cloud-soarer needed for bridging ruins, using vague gestures and general directions. He desires for his deeper visions to be recognized as crucial guidance, avoiding the pitfalls of poor decisions recently suffered by his flock's ancestors.\n",
-              "world": "Carnivora",
-              "kingdom": "Sand Ring Nomads",
-              "town": "Sky-Harbor Stronghold"
+            "Elara the Twig-Mender": {
+              "name": "Elara the Twig-Mender",
+              "description": "Elara is slender, energetic, with nimble hands and eyes adept at examining Callow bark and textiles. She is the appointed Tender in the Fogbound Callow's southern plaza garden, nurturing delicate plants that require rich, unusual sunlight. She longs for the intricate rhythms and responsibilities of permanent Callow life but secretly worries about its emotional distance from the free Flyers' life.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "Sky-Herders of Zephyr",
+              "town": "Fogbound Trading Post"
             },
-            "Kaelen the Sharpened Rim Artist": {
-              "name": "Kaelen the Sharpened Rim Artist",
-              "description": "Kaelen keeps watch from the oldest, craggiest observation deck on the broad back of his storm-beast, surveying corroded tech and the sleeping mass below. Striking scarlet tribal paint marks him as an educator, often narrating seen events with quizzical detachment; his creations depict the intricate dances of sky-packs and ancient cosmic migrations. He feels duty dragged thin, questioning the driven devotion needed for survival against a backdrop of slow decay, yearning perhaps for the simpler existence of following instinct, even feeling a strange, fading acceptance for the beast's own necessary fate.",
-              "world": "Carnivora",
-              "kingdom": "Sand Ring Nomads",
-              "town": "Sky-Harbor Stronghold"
+            "Brokk the Blacksmith's Shadow": {
+              "name": "Brokk the Blacksmith's Shadow",
+              "description": "Brokk is short, sturdy, and speaks heavily, unused to the height of the Callows, his gaze often fixed down. This former Seeker Lands dweller works in the lower Fogbound Post, adapting an Earth-sense of repair to air-fast materials like cloth-covered iron. He intensely desires acceptance as a Sky-Herder, suspecting the nomadic herders admire him while secretly plotting his removal for good reason.",
+              "world": "Suncliff Callows",
+              "kingdom": "Sky-Herders of Zephyr",
+              "town": "Fogbound Trading Post"
             }
           }
         },
-        "Cinderport": {
-          "name": "Cinderport",
-          "description": "A vital trading hub crammed onto a volcanic coastline where smoke spirals toward the sky-beasts. Steam-powered lifts ferry goods between precarious stone tiers carved from cooling lava. Its history is linked to a past pact repudiated generations ago, blamed for nearby, smaller fiery towns vanishing from history books.\n",
-          "world": "Carnivora",
+        "Whisperville Oasis": {
+          "name": "Whisperville Oasis",
+          "description": "Whisperville clings to a heavily-grazed Callow within a verdant plain, attracting many Sky-Herders and their beasts. Deep chaseways connect vital market stalls to the Callow's inner fields. Known traditionally as a defense town, it holds historical tensions with ever-rising herder populations beyond its grazing reach.\n",
+          "world": "Suncliff Callows",
           "npcs": {
-            "Shard": {
-              "name": "Shard",
-              "description": "An elderly stone-weaver from Cinderport whose intricate work of carving steam-lift pathways earns the respect of the city's inhabitants; though respected, he fears the end of an era as powerful cloud-factions consolidate power, forcing Cinderport into a desperate scramble for survival amidst smoldering tensions over broken celestial vows.\n",
-              "world": "Carnivora",
-              "kingdom": "Sand Ring Nomads",
-              "town": "Cinderport"
+            "Aren Stone-Ear (or Covered in furs/dirt, Name: Aren Stone-Ear)": {
+              "name": "Aren Stone-Ear (or Covered in furs/dirt, Name: Aren Stone-Ear)",
+              "description": "An older, pragmatic keeper whose hands are worn from tending the Callow's root systems; his Callow provides for the Sky-Herders. He watches them sometimes forget the natural balance their gentle beasts helped create. He just wants the ground below to be kept green, even if by a few more mammoths.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "Sky-Herders of Zephyr",
+              "town": "Whisperville Oasis"
             },
-            "Kaelen": {
-              "name": "Kaelen",
-              "description": "A respected tracker with eyes like hawk-scans and a deep knowledge of the sky-beasts' migratory drifts among the Cloud Cities; he deeply believes in the ancient nomadic ways but privately questions the futility of following traditions that strand younger generations unless he can find lost heritage routes that suggest a changing world, a thought his chieftain forbids.\n",
-              "world": "Carnivora",
-              "kingdom": "Sand Ring Nomads",
-              "town": "Cinderport"
+            "Skye Swift-Foot (or Similar name, race doesn't matter, maybe human or beastkin descendant, Name: Skye Swift-Foot)": {
+              "name": "Skye Swift-Foot (or Similar name, race doesn't matter, maybe human or beastkin descendant, Name: Skye Swift-Foot)",
+              "description": "Younger, perhaps a bit cocky, Jauntily cap-wearing herder overseeing a portion of Zephyr Flyers responsible for ferrying people and necessities. Sees herding as essential, but dreams of being a Grey Lord someday, receiving prophecy. Feels impatient for the 'rules' sometimes, wanting to explore faster than her band currently does.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "Sky-Herders of Zephyr",
+              "town": "Whisperville Oasis"
             },
-            "Thorne": {
-              "name": "Thorne",
-              "description": "The brooding, silent midshipman aboard a Sand Ring trade vessel, a descendant of those who broke the old treaty; he inherited his father's legendary stamina on the backs of beast-whispers but carries the bitter memory of his town's vanished kin. He longs for knowledge and connection but drifts through the stations like lost ice, feeling adrift from both his duties and his heritage.",
-              "world": "Carnivora",
-              "kingdom": "Sand Ring Nomads",
-              "town": "Cinderport"
+            "Elara, perhaps a keeper/spy/researcher of some sort, Name: Elara": {
+              "name": "Elara, perhaps a keeper/spy/researcher of some sort, Name: Elara",
+              "description": "Observant, perhaps carrying surveying tools or a map, Elara studies the expansion of the herder groups threatening the low ground rainforests surrounding Whisperville. She believes they are losing sight of their heritage. Her own family on the ground disapproves of her 'joining' the Skies. She seeks quiet, perhaps wanting full understanding and relief from her loved ones' disapproval.",
+              "world": "Suncliff Callows",
+              "kingdom": "Sky-Herders of Zephyr",
+              "town": "Whisperville Oasis"
             }
           }
         },
-        "Sunken Depths Outpost": {
-          "name": "Sunken Depths Outpost",
-          "description": "Hamstrung upon the teardrop foundation of an ancient, gentle earth-bear, this town relies on steady, patient trade with outer nomads. Known for its vast, silent bone-harbor holding countless beastrider mounts paid for with grievances long forgotten or futures famously predicted.",
-          "world": "Carnivora",
+        "Aerieview Learning Center": {
+          "name": "Aerieview Learning Center",
+          "description": "High above the spire-rimmed Aerie Peaks, this town collects scholars and ancient texts from various callow traditions. Its library in the spire is vast. Built by a tradition-biding order, Aerieview offers rare wisdom, attracting apprentices bound by history to preserve the floating ways learned through ages of wind drift.\n```",
+          "world": "Suncliff Callows",
           "npcs": {
-            "Kaelen": {
-              "name": "Kaelen",
-              "description": "Kaelen is a wiry rider built for endurance, with a face deeply marked by desert sun and a stern expression. He tends to his mounts and manages trade exchanges at the bustling bone-harbor. Kaelen clings to the memory of his family left behind on an earth-bear, a beautiful statue of one they owned which might chart what's left of their lives. He wishes to find a spouse who understands the ache of raising a family in a town that moves with the beast's muscles.\n",
-              "world": "Carnivora",
-              "kingdom": "Sand Ring Nomads",
-              "town": "Sunken Depths Outpost"
+            "Kaelen Freeborn": {
+              "name": "Kaelen Freeborn",
+              "description": "A young Sky Herder with weathered lines from travel, Kaelen inherited his grandfather's Zephyr Flyer, guiding a band of Sky-Herders who settled high above Zephyr Peaks. He's a skilled pilot, touched by the deep tragedy many families fled the world below. He fiercely loves the independence of their home and the Flights but secretly yearns for a permanent, solid anchor for his people and the Flyer, something stable Kaelen believes lost to them completely impossible.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "Sky-Herders of Zephyr",
+              "town": "Aerieview Learning Center"
             },
-            "Jora": {
-              "name": "Jora",
-              "description": "Jora has long, dark hair always pinned up with temple bones and a surprisingly gentle gaze. She is the kindly keeper and cleaner of the town's vast archive of artifacts and strategies, the collection known as the Whispering Skyscraper. Jora feels the growing detachment as her ancestors are forgotten, replaced by newer generations dreaming of the future. She desires only for the echoes of the past to be preserved with the same reverence demanded by the heavens.\n",
-              "world": "Carnivora",
-              "kingdom": "Sand Ring Nomads",
-              "town": "Sunken Depths Outpost"
+            "Amara Nightbloom": {
+              "name": "Amara Nightbloom",
+              "description": "Tall and composed, Amara tends meticulously to the high-grown ecosystems of the Suncliff Callow where she lives. Actively known for her delicate hands, she's a skilled First Aid Leech \u2013 focused on preserving Callow life. She understands her responsibility to nurture all life, her keenest thoughts focused outward towards protecting her home until all parts prosper and live in perfect, flowing harmony together.\n",
+              "world": "Suncliff Callows",
+              "kingdom": "Sky-Herders of Zephyr",
+              "town": "Aerieview Learning Center"
             },
-            "Roric": {
-              "name": "Roric",
-              "description": "Roric has sun-weathered hands perpetually tanned leather and quick eyes that dart about nervously on their sky-wind mount. He is a practiced beast-tamer, adapting his routine to different riders and mounts each ancient migration. Roric feels the constant strain of uncertainty and management needed to survive a harsh, capricious sky. He secretly dreams of one day securing a small, permanent home.",
-              "world": "Carnivora",
-              "kingdom": "Sand Ring Nomads",
-              "town": "Sunken Depths Outpost"
+            "Vanya Stonehand": {
+              "name": "Vanya Stonehand",
+              "description": "Vanya is an older scholar found chronicling the history of the Sky-Herders at the Aerieview Learning Center. Polished with countless texts, he has deep well-worn reverence for ancient traditions. Vanya agonizes over how to preserve the Callow way when faced with new environmental challenges and pressures asking them to compete. He seeks to accurately record all original flights, patterns, and singer calls, desperately hoping future Callow travelers or callers can find their way back to what defined the past.",
+              "world": "Suncliff Callows",
+              "kingdom": "Sky-Herders of Zephyr",
+              "town": "Aerieview Learning Center"
             }
           }
         }
       }
     }
   },
-  "timestamp": "2025-06-11T02:46:11.353319"
+  "timestamp": "2025-06-16T14:36:42.277262"
 }
