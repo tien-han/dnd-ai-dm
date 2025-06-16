@@ -8,8 +8,16 @@ This repository holds a desktop app that has a user interface that allows any on
 
 This project uses the following technologies:
 
-- (PyQT)[https://pypi.org/project/PyQt6/] - Python Bindings to enable building a full stack application with only Python.
+- [PyQT](https://pypi.org/project/PyQt6/) - Python Bindings to enable building a full stack application with only Python.
 - [OpenRouterAI](https://openrouter.ai/) - Handles AI API calls.
+
+## API Integration
+
+All of our code handling the OpenRouter api endpoint is held within `ai_api_client.py` and our API key is set in the local .env file to prevent exposure.
+
+Within our AIHandler class, we've defined the specific model and API url to use, along with a generalized method that takes in a system and user prompt, converts that to JSON, and sends that to the API for a response.
+
+We save the API response locally and clean up the text before displaying it to the user in the front end.
 
 ## Running the Project
 
@@ -84,3 +92,58 @@ Alternatively, you can open `settings.json` and add in this code:
     ]
 }
 ```
+
+## Project Structure
+
+```
+dnd-ai-dm/
+├── app/                              # Holds all of our app's code
+│   ├── main_window.py                # Our app's window
+│   ├── logic                         # All backend code
+│   │   ├── ai_api_client.py          # AI API interaction
+│   │   ├── load_game.py              # Creates or loads a game
+│   │   ├── process_game_input.py     # Handles all user inputs
+│   │   └── save_load_data.py         # Saves and loads information to a local file
+│   ├── resources                     # All app artifacts
+│   │   └── saved_history             # Player, world, and chat information
+│   │       ├── chat_history.json     # Chat history
+│   │       ├── player.json           # Player and character details
+│   │       └── world.json            # World lore
+│   ├── views/
+│   │   ├── app_view.py               # The main app's UI
+│   │   └── welcome_view.py           # The welcome UI
+│   └── widgets/
+│       ├── character_form_widget.py  # Character form UI
+│       ├── dm_chat_widget.py         # Chat history UI
+│       ├── lore_widget.py            # Lore UI
+│       └── user_input_widget.py      # User input UI
+├── .env (.env.example)               # Environment key/values
+├── main.py                           # Main entry point for the app
+├── README.md
+└── requirements.txt                  # Technical dependencies for the app
+```
+
+## Analysis - Capabilities and Limitations
+
+We found it easy to design an intuitive player experience but found it difficult to get the AI model we chose to generate responses based on clear historical actions. We'll list the capablities and limitations of our app to demonstrate where our app succeeds and where it could improve.
+
+### Capabilities
+
+- The app takes in, saves, and retrieves the player name along with character details.
+- The app uses AI to generate a new fantasy world (world, kingdoms, towns, NPCs) that the player can explore and saves this information locally for access.
+- The app displays a blurb about the world so that the player can always refresh their memory about the world's lore.
+- The game saves all user and AI interactions to a local file.
+- The app sends historical game context along with user inputs to the AI in order to generate next steps/stories.
+- AI is used to generate responses to user inputs and historical chat, which is then shown in the user interface as part of the chat log as the DM.
+
+### Limitations
+
+- The AI has a poor memory of historical context, which can lead to circular story telling.
+- There is no way for the user to load their user profile, created character, or game world.
+
+## Potential Future Improvements
+
+- Use the player's name to find and load their character and game.
+- The game can take user input on what type of game they want to play (background, setting, genre, etc).
+- Use different LLM models and explore which ones give a better response/retain better historical context.
+- Add in a multiplayer feature to support more than one player.
